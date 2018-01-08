@@ -52,7 +52,7 @@ block content
 
   .panel.panel-default
       .panel-heading Linked Accounts
-      if (user.identities.length > 1)
+      if (user.identities != null && user.identities.length > 1)
         table.table.identities
           thead
             tr
